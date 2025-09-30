@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e3e3e2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  /* background-color: #fff; */
+  display: flex;
+  margin: 100px 250px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.container .profile {
+  background-color: rgb(125, 246, 220);
+  flex: 1 1 250px;
+  padding: 20px 50px;
+}
+.profile h1.nama {
+  color: blue;
+  margin: 5px;
+}
+.profile .item {
+  background-color: #fff;
+  margin: 15px 5px;
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 5px solid blue;
+}
+.profile .item h2 {
+  color: blue;
+  margin-bottom: 15px;
+}
+.profile .item p {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.profile .quote {
+  background-color: rgb(254, 254, 106);
+  border-left: 5px solid orange;
+  text-align: center;
+}
+.profile .quote h2 {
+  color: orange;
+}
+.profile .quote p {
+  font-style: italic;
+}
+/*  */
+/*  */
+/* kolom kanan */
+.container .kanan {
+  background-color: #fff;
+  flex: 1 1 250px;
+  padding: 20px 50px;
+  /* text-align: center; */
+}
+.container .kanan h1 {
+  color: blue;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.container .kanan p {
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+.container .kanan label {
+  text-align: start;
+  font-weight: 600;
+}
+.container .kanan input {
+  width: 100%;
+  font-size: 12pt;
+  padding: 15px 5px;
+  border: 1px solid;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.container .kanan p.tombol {
+  background-color: blue;
+  width: 50%;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.container .kanan p.tombol:hover {
+  /* transform: translateY(-10px); */
+  padding: 20px;
+  width: 100%;
+}
+.container .kanan p.tombol a {
+  text-decoration: none;
+  color: #fff;
+}
+@media (max-width: 1140px) {
+  .container {
+    flex-direction: column;
+  }
+}
